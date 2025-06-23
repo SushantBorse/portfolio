@@ -5,28 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sushant Borse | Software Engineer</title>
 
-  <!-- Fonts and CSS -->
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 
-  <!-- AOS Library -->
+  <!-- AOS Animations -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
-  <!-- JS Files -->
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+  <!-- Init Scripts -->
   <script defer src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      AOS.init({
-        duration: 1000, // animation duration in ms
-        once: true      // whether animation should happen only once
-      });
+      AOS.init({ duration: 1000, once: true });
+      particlesJS.load('particles-js', 'particles.json', function () {});
     });
   </script>
 </head>
 <body>
 
-  <nav data-aos="fade-down">
+  <div id="particles-js"></div>
+
+  <nav>
     <div class="logo">Sushant</div>
     <ul>
       <li><a href="#overview">Overview</a></li>
@@ -37,70 +40,71 @@
   </nav>
 
   <header class="hero" data-aos="zoom-in">
-    <h1>Hi, I'm Sushant Borse</h1>
-    <p>A passionate Software Engineer specializing in AI, Cloud & Web Systems</p>
-    <a class="download-btn" href="resume.pdf" target="_blank"><i class="fa fa-download"></i>Download Resume</a>
+    <h1>Hi, I'm <span>Sushant Borse</span></h1>
+    <p>Software Engineer | AI • Cloud • Full-Stack</p>
+    <a class="download-btn" href="resume.pdf" target="_blank">Download Resume</a>
   </header>
 
-  <section class="section" id="overview" data-aos="fade-up">
+  <section id="overview" class="section" data-aos="fade-up">
     <h2>Overview</h2>
-    <p>I am a graduate student at RIT, actively developing AI-powered and cloud-based applications.</p>
+    <p>I'm a Software Engineering graduate from RIT, passionate about building intelligent systems and scalable cloud apps. With experience across MERN, AWS, and machine learning, I bring full-stack skills to modern software development.</p>
   </section>
 
-  <section class="section" id="experience">
+  <section id="experience" class="section">
     <h2 data-aos="fade-up">Experience</h2>
-
     <div class="card" data-aos="fade-right">
       <h3>Software Engineer - TechGigs LLP</h3>
       <p>May 2021 – Jun 2022 | Pune, India</p>
       <ul>
-        <li>Led full-stack MERN development, boosting performance by 20%</li>
-        <li>Implemented CI/CD with Docker & Jenkins</li>
+        <li>Led full-stack MERN development, boosting performance by 20%.</li>
+        <li>Deployed CI/CD using Docker & Jenkins, cutting release time by 25%.</li>
       </ul>
     </div>
-
     <div class="card" data-aos="fade-left">
       <h3>Developer Intern - JSMIndia Infosys</h3>
       <p>Aug 2020 – Apr 2021 | Pune, India</p>
       <ul>
-        <li>Built decentralized blockchain apps with Ethereum</li>
-        <li>Optimized legacy systems with ES6 features</li>
+        <li>Built decentralized blockchain apps using Ethereum and Solidity.</li>
+        <li>Refactored legacy systems using ES6, improving performance.</li>
       </ul>
     </div>
   </section>
 
-  <section class="section" id="projects">
+  <section id="projects" class="section">
     <h2 data-aos="fade-up">Projects</h2>
-
     <div class="card" data-aos="zoom-in-up">
-      <h3>LogBERT: AI-Driven Log Analyzer</h3>
-      <p>Uses BERT and NLP to analyze software logs with 23% improved accuracy.</p>
+      <h3>LogBERT</h3>
+      <p>BERT-based NLP system for log quality analysis, integrated in CI/CD. Achieved 23% higher accuracy in error detection.</p>
     </div>
-
     <div class="card" data-aos="zoom-in-up" data-aos-delay="100">
-      <h3>Attendance System (AWS)</h3>
-      <p>Automated tracking using Rekognition, Lambda, DynamoDB and QuickSight.</p>
+      <h3>Facial Recognition Attendance (AWS)</h3>
+      <p>Built with Rekognition, Lambda, and DynamoDB. Reduced manual effort by 90% and scaled to 1000+ users.</p>
     </div>
-
     <div class="card" data-aos="zoom-in-up" data-aos-delay="200">
       <h3>Smart Car Parking</h3>
-      <p>Web + Android app to streamline valet services with ML & Google Maps.</p>
+      <p>Web + Android valet system with ML-based demand prediction and live tracking using Google Maps API.</p>
     </div>
   </section>
 
-  <section class="section" id="skills" data-aos="fade-up">
+  <section id="skills" class="section" data-aos="fade-up">
     <h2>Skills</h2>
     <ul class="skills-grid">
-      <li data-aos="fade-up" data-aos-delay="0">Java</li>
-      <li data-aos="fade-up" data-aos-delay="50">Python</li>
-      <li data-aos="fade-up" data-aos-delay="100">JavaScript</li>
-      <li data-aos="fade-up" data-aos-delay="150">AWS</li>
-      <li data-aos="fade-up" data-aos-delay="200">Terraform</li>
-      <li data-aos="fade-up" data-aos-delay="250">Spring Boot</li>
-      <li data-aos="fade-up" data-aos-delay="300">React</li>
-      <li data-aos="fade-up" data-aos-delay="350">Django</li>
+      <li>Java</li>
+      <li>Python</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>AWS</li>
+      <li>Terraform</li>
+      <li>Spring Boot</li>
+      <li>Django</li>
+      <li>Node.js</li>
+      <li>MySQL</li>
     </ul>
   </section>
 
   <footer data-aos="fade-up">
-    <p>Made with ❤️ by Sush
+    <p>&copy; 2025 Sushant Borse • Built with passion and particles ⚡</p>
+  </footer>
+
+</body>
+</html>
