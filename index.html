@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>Sxhxl | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
   
   <!-- AOS Animation Library -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script defer src="script.js"></script>
 </head>
 <body>
-  <video autoplay muted loop id="bg-video">
-    <source src="9940664-hd_1920_1080_24fps.mp4" type="video/mp4">
-    Your browser does not support HTML5 video.
-  </video>
+  <!-- Hero Section with Animated Background -->
+  <div class="hero-section">
+    <video autoplay muted loop id="bg-video">
+      <source src="9940664-hd_1920_1080_24fps.mp4" type="video/mp4">
+      Your browser doesn't support HTML5 video.
+    </video>
+    <div class="overlay">
+      <section class="hero" data-aos="fade-up">
+        <h1>Hello, I'm <span>Sxhxl</span></h1>
+        <p>A passionate Software Engineering graduate skilled in building modern web applications and robust backend systems.</p>
+        <a href="resume.pdf" class="btn" target="_blank">View Resume</a>
+      </section>
+    </div>
+  </div>
 
-  <div class="overlay">
-    <section class="hero" data-aos="fade-up">
-      <h1>Hello, I'm <span>Sxhxl</span></h1>
-      <p>A passionate Software Engineering graduate skilled in building modern web applications and backend systems.</p>
-      <a href="resume.pdf" target="_blank" class="btn">View Resume</a>
+  <!-- Main Content Below -->
+  <main class="main-content">
+    <section id="about" data-aos="fade-up">
+      <h2>About Me</h2>
+      <p>I'm a Software Engineering graduate specialized in full-stack web development. I enjoy crafting sleek UI/UX and creating scalable backend systems.</p>
     </section>
 
     <section id="skills" data-aos="fade-up">
@@ -39,6 +49,20 @@
         <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"><p>MySQL</p></div>
       </div>
     </section>
-  </div>
+
+    <section id="projects" data-aos="fade-up">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Portfolio Website</strong> – Built with HTML, CSS & vanilla JS</li>
+        <li><strong>Task Manager App</strong> – MERN stack project</li>
+        <li><strong>Weather Dashboard</strong> – JS with API integration</li>
+      </ul>
+    </section>
+
+    <section id="experience" data-aos="fade-up">
+      <h2>Experience</h2>
+      <p>Worked on freelance and academic full-stack web projects including automation tools and responsive websites. Seeking opportunities to grow in a collaborative team.</p>
+    </section>
+  </main>
 </body>
 </html>
