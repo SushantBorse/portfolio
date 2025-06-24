@@ -3,108 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sushant Borse | Software Engineer</title>
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <title>Sxhxl | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-
-  <!-- AOS Animations -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-
-  <!-- Particles.js -->
-  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-
-  <!-- Init Scripts -->
   <script defer src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      AOS.init({ duration: 1000, once: true });
-      particlesJS.load('particles-js', 'particles.json', function () {});
-    });
-  </script>
 </head>
 <body>
+  <video autoplay muted loop id="bg-video">
+    <source src="9940664-hd_1920_1080_24fps.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
 
-  <div id="particles-js"></div>
+  <div class="overlay">
+    <section class="hero">
+      <h1>Hello, I'm <span>Sxhxl</span></h1>
+      <p>A passionate Software Engineering graduate skilled in building modern web applications and backend systems.</p>
+      <a href="resume.pdf" target="_blank" class="btn">View Resume</a>
+    </section>
 
-  <nav>
-    <div class="logo">Sushant</div>
-    <ul>
-      <li><a href="#overview">Overview</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-    </ul>
-  </nav>
-
-  <header class="hero" data-aos="zoom-in">
-    <h1>Hi, I'm <span>Sushant Borse</span></h1>
-    <p>Software Engineer | AI • Cloud • Full-Stack</p>
-    <a class="download-btn" href="resume.pdf" target="_blank">Download Resume</a>
-  </header>
-
-  <section id="overview" class="section" data-aos="fade-up">
-    <h2>Overview</h2>
-    <p>I'm a Software Engineering graduate from RIT, passionate about building intelligent systems and scalable cloud apps. With experience across MERN, AWS, and machine learning, I bring full-stack skills to modern software development.</p>
-  </section>
-
-  <section id="experience" class="section">
-    <h2 data-aos="fade-up">Experience</h2>
-    <div class="card" data-aos="fade-right">
-      <h3>Software Engineer - TechGigs LLP</h3>
-      <p>May 2021 – Jun 2022 | Pune, India</p>
-      <ul>
-        <li>Led full-stack MERN development, boosting performance by 20%.</li>
-        <li>Deployed CI/CD using Docker & Jenkins, cutting release time by 25%.</li>
-      </ul>
-    </div>
-    <div class="card" data-aos="fade-left">
-      <h3>Developer Intern - JSMIndia Infosys</h3>
-      <p>Aug 2020 – Apr 2021 | Pune, India</p>
-      <ul>
-        <li>Built decentralized blockchain apps using Ethereum and Solidity.</li>
-        <li>Refactored legacy systems using ES6, improving performance.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="projects" class="section">
-    <h2 data-aos="fade-up">Projects</h2>
-    <div class="card" data-aos="zoom-in-up">
-      <h3>LogBERT</h3>
-      <p>BERT-based NLP system for log quality analysis, integrated in CI/CD. Achieved 23% higher accuracy in error detection.</p>
-    </div>
-    <div class="card" data-aos="zoom-in-up" data-aos-delay="100">
-      <h3>Facial Recognition Attendance (AWS)</h3>
-      <p>Built with Rekognition, Lambda, and DynamoDB. Reduced manual effort by 90% and scaled to 1000+ users.</p>
-    </div>
-    <div class="card" data-aos="zoom-in-up" data-aos-delay="200">
-      <h3>Smart Car Parking</h3>
-      <p>Web + Android valet system with ML-based demand prediction and live tracking using Google Maps API.</p>
-    </div>
-  </section>
-
-  <section id="skills" class="section" data-aos="fade-up">
-    <h2>Skills</h2>
-    <ul class="skills-grid">
-      <li>Java</li>
-      <li>Python</li>
-      <li>JavaScript</li>
-      <li>React</li>
-      <li>AWS</li>
-      <li>Terraform</li>
-      <li>Spring Boot</li>
-      <li>Django</li>
-      <li>Node.js</li>
-      <li>MySQL</li>
-    </ul>
-  </section>
-
-  <footer data-aos="fade-up">
-    <p>&copy; 2025 Sushant Borse • Built with passion and particles ⚡</p>
-  </footer>
-
+    <section id="skills">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><p>Python</p></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"><p>Java</p></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"><p>HTML5</p></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"><p>CSS3</p></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><p>JavaScript</p></div>
+      </div>
+    </section>
+  </div>
 </body>
 </html>
