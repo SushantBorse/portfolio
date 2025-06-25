@@ -2,22 +2,26 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   color: white;
-  position: relative;
   z-index: 1;
 }
 
 #bg-video {
   position: fixed;
-  top: 0; left: 0;
-  width: 100vw; height: 100vh;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
   object-fit: cover;
   z-index: -2;
+  pointer-events: none;
 }
 
 .overlay {
   position: fixed;
-  top: 0; left: 0;
-  width: 100vw; height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.6);
   z-index: -1;
 }
@@ -26,11 +30,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: transparent;
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
   z-index: 100;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 nav .logo {
@@ -52,7 +56,7 @@ nav ul li a {
 
 .hero {
   text-align: center;
-  padding: 10vh 2rem;
+  padding: 15vh 2rem;
 }
 
 .hero h1 {
@@ -78,7 +82,7 @@ nav ul li a {
 
 .download-btn:hover {
   background: white;
-  color: #0f0f0f;
+  color: black;
 }
 
 .section {
@@ -90,6 +94,7 @@ nav ul li a {
 .section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .card {
@@ -123,6 +128,7 @@ nav ul li a {
   font-size: 2rem;
   display: block;
   margin: 0 auto 0.5rem;
+  height: 2rem;
 }
 
 footer {
