@@ -1,68 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>Sxhxl | Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
-  
-  <!-- AOS Animation Library -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script defer src="script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Hero Section with Animated Background -->
-  <div class="hero-section">
+  <!-- Hero Section with Video Background -->
+  <section id="hero">
     <video autoplay muted loop id="bg-video">
-      <source src="9940664-hd_1920_1080_24fps.mp4" type="video/mp4">
-      Your browser doesn't support HTML5 video.
+      <source src="9940664-hd_1920_1080_24fps.mp4" type="video/mp4" />
     </video>
     <div class="overlay">
-      <section class="hero" data-aos="fade-up">
-        <h1>Hello, I'm <span>Sxhxl</span></h1>
-        <p>A passionate Software Engineering graduate skilled in building modern web applications and robust backend systems.</p>
-        <a href="resume.pdf" class="btn" target="_blank">View Resume</a>
-      </section>
+      <h1>Hi, I'm [Your Name]</h1>
+      <p>Full Stack Developer | Tech Enthusiast</p>
     </div>
-  </div>
+  </section>
 
-  <!-- Main Content Below -->
-  <main class="main-content">
-    <section id="about" data-aos="fade-up">
-      <h2>About Me</h2>
-      <p>I'm a Software Engineering graduate specialized in full-stack web development. I enjoy crafting sleek UI/UX and creating scalable backend systems.</p>
-    </section>
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-logos">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+    </div>
+  </section>
 
-    <section id="skills" data-aos="fade-up">
-      <h2>My Skills</h2>
-      <div class="skills-grid">
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><p>Python</p></div>
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"><p>Java</p></div>
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"><p>HTML5</p></div>
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"><p>CSS3</p></div>
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><p>JavaScript</p></div>
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"><p>React</p></div>
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"><p>Node.js</p></div>
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"><p>Git</p></div>
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"><p>GitHub</p></div>
-        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"><p>MySQL</p></div>
-      </div>
-    </section>
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm passionate about building responsive web apps and solving real-world problems with code. Check out my work and feel free to connect!</p>
+  </section>
 
-    <section id="projects" data-aos="fade-up">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Portfolio Website</strong> – Built with HTML, CSS & vanilla JS</li>
-        <li><strong>Task Manager App</strong> – MERN stack project</li>
-        <li><strong>Weather Dashboard</strong> – JS with API integration</li>
-      </ul>
-    </section>
-
-    <section id="experience" data-aos="fade-up">
-      <h2>Experience</h2>
-      <p>Worked on freelance and academic full-stack web projects including automation tools and responsive websites. Seeking opportunities to grow in a collaborative team.</p>
-    </section>
-  </main>
+  <script src="script.js"></script>
 </body>
 </html>
