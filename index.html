@@ -3,39 +3,103 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Sushant Borse | Software Engineer</title>
+
+  <!-- Fonts & Icons -->
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => AOS.init({ duration: 1000, once: true }));
+  </script>
 </head>
 <body>
-  <!-- Hero Section with Video Background -->
-  <section id="hero">
-    <video autoplay muted loop id="bg-video">
-      <source src="9940664-hd_1920_1080_24fps.mp4" type="video/mp4" />
-    </video>
-    <div class="overlay">
-      <h1>Hi, I'm [Your Name]</h1>
-      <p>Full Stack Developer | Tech Enthusiast</p>
+
+  <!-- Background Video -->
+  <video autoplay muted loop id="bg-video">
+    <source src="9940664-hd_1920_1080_24fps.mp4" type="video/mp4" />
+  </video>
+
+  <div class="overlay"></div>
+
+  <nav data-aos="fade-down">
+    <div class="logo">Sushant</div>
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" data-aos="zoom-in">
+    <h1>Hi, I'm Sushant Borse</h1>
+    <p>A Software Engineer passionate about AI, cloud, and system design</p>
+    <a class="download-btn" href="resume.pdf" target="_blank"><i class="fa fa-download"></i> Download Resume</a>
+  </header>
+
+  <section class="section" id="overview" data-aos="fade-up">
+    <h2>Overview</h2>
+    <p>I’m a graduate student at RIT with strong foundations in full-stack development, cloud infrastructure, and machine learning. I strive to build impactful and scalable software solutions.</p>
+  </section>
+
+  <section class="section" id="experience">
+    <h2 data-aos="fade-up">Experience</h2>
+    <div class="card" data-aos="fade-right">
+      <h3>Software Engineer - TechGigs LLP</h3>
+      <p>May 2021 – Jun 2022 | Pune, India</p>
+      <ul>
+        <li>Led full-stack MERN development, improving performance by 20%</li>
+        <li>Implemented CI/CD with Docker & Jenkins</li>
+      </ul>
+    </div>
+    <div class="card" data-aos="fade-left">
+      <h3>Developer Intern - JSMIndia Infosys</h3>
+      <p>Aug 2020 – Apr 2021 | Pune, India</p>
+      <ul>
+        <li>Built decentralized blockchain apps with Ethereum</li>
+        <li>Optimized legacy systems using ES6 features</li>
+      </ul>
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>My Skills</h2>
-    <div class="skills-logos">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+  <section class="section" id="projects">
+    <h2 data-aos="fade-up">Projects</h2>
+    <div class="card" data-aos="zoom-in-up">
+      <h3>LogBERT: AI-Driven Log Analyzer</h3>
+      <p>Uses BERT and NLP to analyze software logs with 23% improved accuracy.</p>
+    </div>
+    <div class="card" data-aos="zoom-in-up" data-aos-delay="100">
+      <h3>Attendance System (AWS)</h3>
+      <p>Automated tracking using Rekognition, Lambda, DynamoDB, and QuickSight.</p>
+    </div>
+    <div class="card" data-aos="zoom-in-up" data-aos-delay="200">
+      <h3>Smart Car Parking</h3>
+      <p>Web + Android app to streamline valet services using ML & Google Maps.</p>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I'm passionate about building responsive web apps and solving real-world problems with code. Check out my work and feel free to connect!</p>
+  <section class="section" id="skills" data-aos="fade-up">
+    <h2>Skills</h2>
+    <ul class="skills-grid">
+      <li><i class="fab fa-java"></i> Java</li>
+      <li><i class="fab fa-python"></i> Python</li>
+      <li><i class="fab fa-js"></i> JavaScript</li>
+      <li><img src="https://cdn.simpleicons.org/cplusplus/00599C" alt="C++" /> C++</li>
+      <li><img src="https://cdn.simpleicons.org/amazonaws/FF9900" alt="AWS" /> AWS</li>
+      <li><img src="https://cdn.simpleicons.org/terraform/7B42BC" alt="Terraform" /> Terraform</li>
+      <li><img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" /> React</li>
+      <li><img src="https://cdn.simpleicons.org/django/092E20" alt="Django" /> Django</li>
+    </ul>
   </section>
 
-  <script src="script.js"></script>
+  <footer data-aos="fade-up">
+    <p>Made with ❤️ by Sushant</p>
+  </footer>
+
 </body>
 </html>
